@@ -2,10 +2,10 @@
   "name": "origin-react-starter",
   "version": "0.1.0",
   "description": "Base application setup for creating a new react project.",
-  "main": "server/index.js",
+  "main": "server/weatherserver.js",
   "scripts": {
     "build": "npm run less && webpack",
-    "start": "npm run less && webpack && node server/index.js",
+    "start": "npm run less && webpack && node server/weatherserver.js",
     "less": "lessc src/css/style.less dist/css/style.css",
     "lint": "eslint .",
     "test": "npm run build && mocha test/.setup.js test/*.spec.js"
