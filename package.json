@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "description": "Base application setup for creating a new react project.",
   "main": "server/weatherserver.js",
+  "engines": {
+    "node": "8.7.0"
+  },
   "scripts": {
     "build": "npm run less && webpack",
-    "start": "npm run webpack && node server/weatherserver.js",
+    "start": "npm run less && webpack && node server/weatherserver.js",
     "less": "lessc src/css/style.less dist/css/style.css",
     "lint": "eslint .",
     "test": "npm run build && mocha test/.setup.js test/*.spec.js"
